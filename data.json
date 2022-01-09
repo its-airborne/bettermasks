@@ -1,0 +1,158 @@
+[
+  {
+    "wild": {
+      "Nothing": "X",
+      "Cloth": "1.4X",
+      "SM": "2X",
+      "SM,fit": "5X",
+      "N95": "10X",
+      "N95,fit": "100X"
+    },
+    "delta": {
+      "Nothing": "0.4X",
+      "Cloth": "0.6X",
+      "SM": "0.8X",
+      "SM,fit": "2X",
+      "N95": "4X",
+      "N95,fit": "40X"
+    },
+    "omicron": {
+      "Nothing": "0.16X",
+      "Cloth": "0.24X",
+      "SM": "0.32X",
+      "SM,fit": "0.8X",
+      "N95": "1.6X",
+      "N95,fit": "16X"
+    }
+  },
+  {
+    "wild": {
+      "Nothing": "1.7X",
+      "Cloth": "2.4X",
+      "SM": "3.3X",
+      "SM,fit": "8X",
+      "N95": "17X",
+      "N95,fit": "168X"
+    },
+    "delta": {
+      "Nothing": "0.7X",
+      "Cloth": "X",
+      "SM": "1.3X",
+      "SM,fit": "3.4X",
+      "N95": "7X",
+      "N95,fit": "66X"
+    },
+    "omicron": {
+      "Nothing": "0.28X",
+      "Cloth": "0.4X",
+      "SM": "0.52X",
+      "SM,fit": "1.36X",
+      "N95": "2.8X",
+      "N95,fit": "26.4X"
+    }
+  },
+  {
+    "wild": {
+      "Nothing": "2X",
+      "Cloth": "3X",
+      "SM": "4X",
+      "SM,fit": "10X",
+      "N95": "20X",
+      "N95,fit": "198X"
+    },
+    "delta": {
+      "Nothing": "0.8X",
+      "Cloth": "1.2X",
+      "SM": "1.6X",
+      "SM,fit": "4X",
+      "N95": "8X",
+      "N95,fit": "84X"
+    },
+    "omicron": {
+      "Nothing": "0.32X",
+      "Cloth": "0.48X",
+      "SM": "0.64X",
+      "SM,fit": "1.6X",
+      "N95": "3.2X",
+      "N95,fit": "33.6X"
+    }
+  },
+  {
+    "wild": {
+      "Nothing": "5X",
+      "Cloth": "7X",
+      "SM": "12X",
+      "SM,fit": "25X",
+      "N95": "50X",
+      "N95,fit": "498X"
+    },
+    "delta": {
+      "Nothing": "2X",
+      "Cloth": "3X",
+      "SM": "4.1X",
+      "SM,fit": "10X",
+      "N95": "20X",
+      "N95,fit": "204X"
+    },
+    "omicron": {
+      "Nothing": "0.8X",
+      "Cloth": "1.2X",
+      "SM": "1.64X",
+      "SM,fit": "4X",
+      "N95": "8X",
+      "N95,fit": "81.6X"
+    }
+  },
+  {
+    "wild": {
+      "Nothing": "10X",
+      "Cloth": "14.4X",
+      "SM": "18X",
+      "SM,fit": "50X",
+      "N95": "102X",
+      "N95,fit": "1,002X"
+    },
+    "delta": {
+      "Nothing": "4X",
+      "Cloth": "5.8X",
+      "SM": "8X",
+      "SM,fit": "20X",
+      "N95": "41X",
+      "N95,fit": "408X"
+    },
+    "omicron": {
+      "Nothing": "1.6X",
+      "Cloth": "2.3X",
+      "SM": "3.2X",
+      "SM,fit": "8X",
+      "N95": "16.4X",
+      "N95,fit": "163.2X"
+    }
+  },
+  {
+    "wild": {
+      "Nothing": "100X",
+      "Cloth": "144X",
+      "SM": "198X",
+      "SM,fit": "498X",
+      "N95": "1,002X",
+      "N95,fit": "10,002X"
+    },
+    "delta": {
+      "Nothing": "40X",
+      "Cloth": "58X",
+      "SM": "84X",
+      "SM,fit": "204X",
+      "N95": "408X",
+      "N95,fit": "4,062X"
+    },
+    "omicron": {
+      "Nothing": "16X",
+      "Cloth": "23X",
+      "SM": "33.6X",
+      "SM,fit": "81.6X",
+      "N95": "163.2X",
+      "N95,fit": "1625X"
+    }
+  }
+]
