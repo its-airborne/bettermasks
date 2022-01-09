@@ -2,51 +2,51 @@
   <div id="app">
 
     <div class="container">
-    <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-3 form-check form-switch">
-      <input
-        v-model="checkWild"
-        class="form-check-input"
-        type="checkbox"
-        id="wild-button"
-        checked>
-      <label
-        class="form-check-label wild"
-        for="wild-button"
-      >
-        Wild
-      </label>
-    </div>
-    <div class="col-sm-3 form-check form-switch">
-      <input
-        v-model="checkDelta"
-        class="form-check-input"
-        type="checkbox"
-        id="delta-button"
-        checked>
-      <label
-        class="form-check-label delta"
-        for="delta-button"
-      >
-        Delta
-      </label>
-    </div>
-    <div class="col-sm-3 form-check form-switch">
-      <input
-        v-model="checkOmicron"
-        class="form-check-input"
-        type="checkbox"
-        id="omicron-button"
-        checked>
-      <label
-        class="form-check-label omicron"
-        for="omicron-button"
-      >
-        Omicron
-      </label>
-    </div>
-    </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3 form-check form-switch">
+          <input
+            v-model="checkWild"
+            class="form-check-input"
+            type="checkbox"
+            id="wild-button"
+            checked>
+          <label
+            class="form-check-label wild"
+            for="wild-button"
+          >
+            Wild
+          </label>
+        </div>
+        <div class="col-sm-3 form-check form-switch">
+          <input
+            v-model="checkDelta"
+            class="form-check-input"
+            type="checkbox"
+            id="delta-button"
+            checked>
+          <label
+            class="form-check-label delta"
+            for="delta-button"
+          >
+            Delta
+          </label>
+        </div>
+        <div class="col-sm-3 form-check form-switch">
+          <input
+            v-model="checkOmicron"
+            class="form-check-input"
+            type="checkbox"
+            id="omicron-button"
+            checked>
+          <label
+            class="form-check-label omicron"
+            for="omicron-button"
+          >
+            Omicron
+          </label>
+        </div>
+      </div>
     </div>
 
     <table class="table">
