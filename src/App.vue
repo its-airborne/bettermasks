@@ -1,7 +1,10 @@
 <template>
   <div id="app">
 
-    <div class="form-check form-switch">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3 form-check form-switch">
       <input
         v-model="checkWild"
         class="form-check-input"
@@ -15,7 +18,7 @@
         Wild
       </label>
     </div>
-    <div class="form-check form-switch">
+    <div class="col-sm-3 form-check form-switch">
       <input
         v-model="checkDelta"
         class="form-check-input"
@@ -29,7 +32,7 @@
         Delta
       </label>
     </div>
-    <div class="form-check form-switch">
+    <div class="col-sm-3 form-check form-switch">
       <input
         v-model="checkOmicron"
         class="form-check-input"
@@ -42,6 +45,8 @@
       >
         Omicron
       </label>
+    </div>
+    </div>
     </div>
 
     <table class="table">
@@ -62,7 +67,8 @@
             :class="`table-${index}-${headIndex}`"
           >
             <table>
-              <tr v-if="checkWild" class="wild">{{ jsonData[index].wild[head] }}</tr>
+              <tr v-if="checkWild || jsonData[index].wild[head] === '1.0X'"
+                  class="wild">{{ jsonData[index].wild[head] }}</tr>
               <tr v-if="checkDelta" class="delta">{{ jsonData[index].delta[head] }}</tr>
               <tr v-if="checkOmicron" class="omicron">{{ jsonData[index].omicron[head] }}</tr>
             </table>
