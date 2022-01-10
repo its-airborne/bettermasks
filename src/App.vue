@@ -9,7 +9,6 @@
           defense here. In 2022, You need BETTER MASKS than simple cloth masks.</div>
       </div>
       <div class="row">
-        <div class="col-sm-2"></div>
         <div class="col-sm-3 form-check form-switch">
           <input
             v-model="checkWild"
@@ -52,6 +51,24 @@
             Omicron
           </label>
         </div>
+        <div class="col-sm-3 well form-horizontal">
+          <div class="form-group" style="white-space:nowrap;">
+            <div>
+              <div class="btn-group" style="display:inline-flex;">
+                <div>Figures:</div>
+                &nbsp;
+                <input type="radio" id="time" value="Time" v-model="xOrTime">
+                &nbsp;
+                <label for="time">Time</label>
+                &nbsp;
+                <input type="radio" id="x" value="X" v-model="xOrTime">
+                &nbsp;
+                <label for="x">Versus Nothing/Nothing - <strong>
+                  <span style="background-color: #fefe9a">1.0X</span></strong></label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -73,10 +90,18 @@
             :class="`table-${index}-${headIndex}`"
           >
             <table>
-              <tr v-if="checkWild || jsonData[index].wild.x[head] === '1.0X'"
+              <tr v-if="xOrTime === 'X' && (checkWild || jsonData[index].wild.x[head] === '1.0X')"
                   class="wild">{{ jsonData[index].wild.x[head] }}</tr>
-              <tr v-if="checkDelta" class="delta">{{ jsonData[index].delta.x[head] }}</tr>
-              <tr v-if="checkOmicron" class="omicron">{{ jsonData[index].omicron.x[head] }}</tr>
+              <tr v-if="xOrTime === 'X' && checkDelta" class="delta">
+                {{ jsonData[index].delta.x[head] }}</tr>
+              <tr v-if="xOrTime === 'X' && checkOmicron" class="omicron">
+                {{ jsonData[index].omicron.x[head] }}</tr>
+              <tr v-if="xOrTime === 'Time' && checkWild"
+                  class="wild">{{ jsonData[index].wild.time[head] }}</tr>
+              <tr v-if="xOrTime === 'Time' && checkDelta" class="delta">
+                {{ jsonData[index].delta.time[head] }}</tr>
+              <tr v-if="xOrTime === 'Time'&& checkOmicron" class="omicron">
+                {{ jsonData[index].omicron.time[head] }}</tr>
             </table>
           </td>
         </tr>
@@ -104,6 +129,7 @@ export default {
       checkWild: true,
       checkDelta: true,
       checkOmicron: true,
+      xOrTime: 'X',
       jsonData: [],
     };
   },

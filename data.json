@@ -10,12 +10,12 @@
         "N95,fit": "100X"
       },
       "time": {
-        "Nothing": "5 secs",
-        "Cloth": "1 mins",
-        "SM": "50 mins",
-        "SM,fit": "2.5 hours",
-        "N95": "30 hrs",
-        "N95,fit": "2000 hours"
+        "Nothing": "10 mins",
+        "Cloth": "14 mins",
+        "SM": "20 mins",
+        "SM,fit": "50 hours",
+        "N95": "1.7 hours",
+        "N95,fit": "16.7 hours"
       }
     },
     "delta": {
@@ -26,6 +26,14 @@
         "SM,fit": "2X",
         "N95": "4X",
         "N95,fit": "40X"
+      },
+      "time": {
+        "Nothing": "4 mins",
+        "Cloth": "6 mins",
+        "SM": "8 mins",
+        "SM,fit": "20 mins",
+        "N95": "41 mins",
+        "N95,fit": "6.8 hours"
       }
     },
     "omicron": {
@@ -36,6 +44,14 @@
         "SM,fit": "0.8X",
         "N95": "1.6X",
         "N95,fit": "16X"
+      },
+      "time": {
+        "Nothing": "100 seconds",
+        "Cloth": "2.4 mins",
+        "SM": "3.2 mins",
+        "SM,fit": "8 mins",
+        "N95": "16.4 mins",
+        "N95,fit": "2.7 hours"
       }
     }
   },
@@ -48,6 +64,14 @@
         "SM,fit": "8X",
         "N95": "17X",
         "N95,fit": "168X"
+      },
+      "time": {
+        "Nothing": "17 mins",
+        "Cloth": "24 mins",
+        "SM": "33 mins",
+        "SM,fit": "83 mins",
+        "N95": "2.8 hours",
+        "N95,fit": "28 hours"
       }
     },
     "delta": {
@@ -58,6 +82,14 @@
         "SM,fit": "3.4X",
         "N95": "7X",
         "N95,fit": "66X"
+      },
+      "time": {
+        "Nothing": "7 mins",
+        "Cloth": "10 mins",
+        "SM": "13 mins",
+        "SM,fit": "34 mins",
+        "N95": "68 mins",
+        "N95,fit": "11 hours"
       }
     },
     "omicron": {
@@ -68,6 +100,13 @@
         "SM,fit": "1.36X",
         "N95": "2.8X",
         "N95,fit": "26.4X"
+      },
+      "time": {
+        "Nothing": "2.8 mins",
+        "Cloth": "4 mins",
+        "SM": "5.2 mins",
+        "SM,fit": "13.6 mins",
+        "N95,fit": "4.4 hours"
       }
     }
   },
@@ -80,6 +119,14 @@
         "SM,fit": "10X",
         "N95": "20X",
         "N95,fit": "198X"
+      },
+      "time": {
+        "Nothing": "20 mins",
+        "Cloth": "29 mins",
+        "SM": "40 mins",
+        "SM,fit": "1.3 hours",
+        "N95": "3.3 hours",
+        "N95,fit": "33 hours"
       }
     },
     "delta": {
@@ -90,6 +137,14 @@
         "SM,fit": "4X",
         "N95": "8X",
         "N95,fit": "84X"
+      },
+      "time": {
+        "Nothing": "8 mins",
+        "Cloth": "12 mins",
+        "SM": "16 mins",
+        "SM,fit": "41 mins",
+        "N95": "81 mins",
+        "N95,fit": "14 hours"
       }
     },
     "omicron": {
@@ -100,6 +155,14 @@
         "SM,fit": "1.6X",
         "N95": "3.2X",
         "N95,fit": "33.6X"
+      },
+      "time": {
+        "Nothing": "3.2 mins",
+        "Cloth": "4.8 mins",
+        "SM": "6.4 mins",
+        "SM,fit": "16.4 hours",
+        "N95": "32.4 hours",
+        "N95,fit": "5.6 hours"
       }
     }
   },
@@ -112,6 +175,14 @@
         "SM,fit": "25X",
         "N95": "50X",
         "N95,fit": "498X"
+      },
+      "time": {
+        "Nothing": "50 mins",
+        "Cloth": "71 mins",
+        "SM": "2 hours",
+        "SM,fit": "4.2 hours",
+        "N95": "8.3 hours",
+        "N95,fit": "83 hours"
       }
     },
     "delta": {
@@ -122,6 +193,14 @@
         "SM,fit": "10X",
         "N95": "20X",
         "N95,fit": "204X"
+      },
+      "time": {
+        "Nothing": "20 mins",
+        "Cloth": "29 mins",
+        "SM": "41 mins",
+        "SM,fit": "1.7 hours",
+        "N95": "3.3 hours",
+        "N95,fit": "34 hours"
       }
     },
     "omicron": {
@@ -132,6 +211,14 @@
         "SM,fit": "4X",
         "N95": "8X",
         "N95,fit": "81.6X"
+      },
+      "time": {
+        "Nothing": "8 mins",
+        "Cloth": "11.6 mins",
+        "SM": "16.4 mins",
+        "SM,fit": "40.8 mins",
+        "N95": "81.6 mins",
+        "N95,fit": "13.6 hours"
       }
     }
   },
@@ -144,6 +231,14 @@
         "SM,fit": "50X",
         "N95": "102X",
         "N95,fit": "1,002X"
+      },
+      "time": {
+        "Nothing": "1.7 hours",
+        "Cloth": "2.4 hours",
+        "SM": "3 hours",
+        "SM,fit": "8.3 hours",
+        "N95": "17 hours",
+        "N95,fit": "167 hours"
       }
     },
     "delta": {
@@ -154,6 +249,14 @@
         "SM,fit": "20X",
         "N95": "41X",
         "N95,fit": "408X"
+      },
+      "time": {
+        "Nothing": "40 mins",
+        "Cloth": "58 mins",
+        "SM": "81 mins",
+        "SM,fit": "3.4 hours",
+        "N95": "6.8 hours",
+        "N95,fit": "68 hours"
       }
     },
     "omicron": {
@@ -164,6 +267,14 @@
         "SM,fit": "8X",
         "N95": "16.4X",
         "N95,fit": "163.2X"
+      },
+      "time": {
+        "Nothing": "16 mins",
+        "Cloth": "23.2 mins",
+        "SM": "32.4 mins",
+        "SM,fit": "81.6 hours",
+        "N95": "2.7 hours",
+        "N95,fit": "27.2 hours"
       }
     }
   },
@@ -176,6 +287,14 @@
         "SM,fit": "498X",
         "N95": "1,002X",
         "N95,fit": "10,002X"
+      },
+      "time": {
+        "Nothing": "16.7 hours",
+        "Cloth": "24 hours",
+        "SM": "33 hours",
+        "SM,fit": "83 hours",
+        "N95": "167 hours",
+        "N95,fit": "1667 hours"
       }
     },
     "delta": {
@@ -186,6 +305,14 @@
         "SM,fit": "204X",
         "N95": "408X",
         "N95,fit": "4,062X"
+      },
+      "time": {
+        "Nothing": "6.8 hours",
+        "Cloth": "10 hours",
+        "SM": "14 hours",
+        "SM,fit": "34 hours",
+        "N95": "68 hours",
+        "N95,fit": "667 hours"
       }
     },
     "omicron": {
@@ -196,6 +323,14 @@
         "SM,fit": "81.6X",
         "N95": "163.2X",
         "N95,fit": "1,625X"
+      },
+      "time": {
+        "Nothing": "2.2 hours",
+        "Cloth": "4 hours",
+        "SM": "5.6 hours",
+        "SM,fit": "32.6 hours",
+        "N95": "27.2 hours",
+        "N95,fit": "266.8 hours"
       }
     }
   }
