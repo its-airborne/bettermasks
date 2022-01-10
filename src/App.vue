@@ -67,10 +67,10 @@
             :class="`table-${index}-${headIndex}`"
           >
             <table>
-              <tr v-if="checkWild || jsonData[index].wild[head] === '1.0X'"
-                  class="wild">{{ jsonData[index].wild[head] }}</tr>
-              <tr v-if="checkDelta" class="delta">{{ jsonData[index].delta[head] }}</tr>
-              <tr v-if="checkOmicron" class="omicron">{{ jsonData[index].omicron[head] }}</tr>
+              <tr v-if="checkWild || jsonData[index].wild.x[head] === '1.0X'"
+                  class="wild">{{ jsonData[index].wild.x[head] }}</tr>
+              <tr v-if="checkDelta" class="delta">{{ jsonData[index].delta.x[head] }}</tr>
+              <tr v-if="checkOmicron" class="omicron">{{ jsonData[index].omicron.x[head] }}</tr>
             </table>
           </td>
         </tr>
