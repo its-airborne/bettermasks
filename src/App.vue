@@ -9,6 +9,10 @@
           defense here. In 2022, You need BETTER MASKS than simple cloth masks.</div>
         <div class="col-sm-10">This table is about improvement in relative protection as you opt for
           better mask combinations</div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">Rows - masks the infecitous person is wearing</div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">Columns - masks the person who could be infected is wearing</div>
       </div>
       <div class="row">
         <div class="col-sm-2"></div>
