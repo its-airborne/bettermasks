@@ -14,8 +14,10 @@
           <div class="col-sm-2"></div>
           <div class="col-sm-10">Columns - masks the person who could be infected is wearing</div>
       </div>
+      <br/>
       <div class="row">
-        <div class="col-sm-3 form-check form-switch">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2 form-check form-switch">
           <input
             v-model="checkWild"
             class="form-check-input"
@@ -29,7 +31,7 @@
             Wild
           </label>
         </div>
-        <div class="col-sm-3 form-check form-switch">
+        <div class="col-sm-2 form-check form-switch">
           <input
             v-model="checkDelta"
             class="form-check-input"
@@ -43,7 +45,7 @@
             Delta
           </label>
         </div>
-        <div class="col-sm-3 form-check form-switch">
+        <div class="col-sm-2 form-check form-switch">
           <input
             v-model="checkOmicron"
             class="form-check-input"
@@ -58,6 +60,7 @@
           </label>
         </div>
         <div class="col-sm-3 well form-horizontal">
+        <div class="col-sm-2"></div>
           <div class="form-group" style="white-space:nowrap;">
             <div>
               <div class="btn-group" style="display:inline-flex;">
