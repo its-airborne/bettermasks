@@ -1,4 +1,4 @@
-# virus-table
+# Better masks
 
 ## Project setup
 ```
