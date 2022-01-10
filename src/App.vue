@@ -4,6 +4,12 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-2"></div>
+        <div class="col-sm-8">COVID-19 is primarily airborne. Aerosols that float and slowly fill
+          an indoor area are the way you are most likely to catch it.  Masks are your best personal
+          defense here. In 2022, You need BETTER MASKS than simple cloth masks.</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
         <div class="col-sm-3 form-check form-switch">
           <input
             v-model="checkWild"
