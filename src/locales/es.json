@@ -1,0 +1,19 @@
+{
+  "covid-message": "COVID-19 se transmite principalmente por el aire. Aerosoles que flotan y se llenan lentamente\n          un área interior es la forma en que es más probable que lo atrape. Las mascarillas son tu mejor personal\n          defensa aquí. En 2022, necesita MEJORES MASCARILLAS que simples mascarillas de tela.",
+  "table-info": "Esta tabla trata sobre la mejora en la protección relativa a medida que opta por\n          mejores combinaciones de máscaras",
+  "rows-info": "Filas: máscaras que lleva la persona infecciosa",
+  "column-info": "Columnas: máscaras que lleva la persona que podría estar infectada",
+  "good-person": "La persona vulnerable está usando",
+  "infectious-person": "La persona infecciosa está usando",
+  "Nothing": "Nada",
+  "Cloth": "Tela",
+  "SM": "SM",
+  "SM,fit": "SM,fit",
+  "N95,fit": "N95,fit",
+  "hours": "Horas",
+  "mins": "mins",
+  "seconds": "segundos",
+  "Figures": "Cifras",
+  "Time": "Hora",
+  "Versus Nothing / Nothing": "Contra Nada / Nada"
+}
