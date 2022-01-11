@@ -180,7 +180,7 @@ export default {
   data() {
     return {
       dataHeaders: ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit'],
-      headers: ['Nothing', 'Cloth', 'SM', 'SM,fit', '🇺🇸 N95', 'N95,fit'],
+      headers: ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit'],
       checkWild: true,
       checkDelta: true,
       checkOmicron: true,
