@@ -53,6 +53,14 @@
         "N95": "16.4 mins",
         "N95,fit": "2.7 hours"
       }
+    },
+    "color": {
+      "Nothing": "fefe9a",
+      "Cloth": "f4f269",
+      "SM": "f4f269",
+      "SM,fit": "dae85d",
+      "N95": "dae85d",
+      "N95,fit": "41ad1a"
     }
   },
   {
@@ -106,9 +114,17 @@
         "Cloth": "4 mins",
         "SM": "5.2 mins",
         "SM,fit": "13.6 mins",
-        "N95,fit": "27.2 mins",
+        "N95": "27.2 mins",
         "N95,fit": "4.4 hours"
       }
+    },
+    "color": {
+      "Nothing": "f4f269",
+      "Cloth": "f4f269",
+      "SM": "f4f269",
+      "SM,fit": "dae85d",
+      "N95": "dae85d",
+      "N95,fit": "41ad1a"
     }
   },
   {
@@ -165,6 +181,14 @@
         "N95": "32.4 hours",
         "N95,fit": "5.6 hours"
       }
+    },
+    "color": {
+      "Nothing": "f4f269",
+      "Cloth": "f4f269",
+      "SM": "f4f269",
+      "SM,fit": "dae85d",
+      "N95": "dae85d",
+      "N95,fit": "41ad1a"
     }
   },
   {
@@ -221,6 +245,14 @@
         "N95": "81.6 mins",
         "N95,fit": "13.6 hours"
       }
+    },
+    "color": {
+      "Nothing": "dae85d",
+      "Cloth": "dae85d",
+      "SM": "dae85d",
+      "SM,fit": "dae85d",
+      "N95": "bfde52",
+      "N95,fit": "41ad1a"
     }
   },
   {
@@ -277,6 +309,14 @@
         "N95": "2.7 hours",
         "N95,fit": "27.2 hours"
       }
+    },
+    "color": {
+      "Nothing": "dae85d",
+      "Cloth": "dae85d",
+      "SM": "dae85d",
+      "SM,fit": "bfde52",
+      "N95": "bfde52",
+      "N95,fit": "41ad1a"
     }
   },
   {
@@ -333,6 +373,14 @@
         "N95": "27.2 hours",
         "N95,fit": "266.8 hours"
       }
+    },
+    "color": {
+      "Nothing": "41ad1a",
+      "Cloth": "41ad1a",
+      "SM": "41ad1a",
+      "SM,fit": "41ad1a",
+      "N95": "41ad1a",
+      "N95,fit": "03665c"
     }
   }
 ]
