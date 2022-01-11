@@ -1,0 +1,19 @@
+{
+  "covid-message": "O COVID-19 é transmitido principalmente pelo ar. Aerossóis que flutuam e enchem lentamente\n           uma área interna é a maneira mais provável de pegá-lo. Máscaras são o seu melhor pessoal\n           defesa aqui. Em 2022, você precisa de MELHORES MÁSCARAS do que simples máscaras de pano.",
+  "table-info": "Esta tabela é sobre a melhoria relativa da proteção conforme você escolhe\n           melhores combinações de máscaras",
+  "rows-info": "Linhas: máscaras usadas pela pessoa infectada",
+  "column-info": "Colunas: máscaras usadas pela pessoa que pode estar infectada",
+  "good-person": "A pessoa vulnerável está usando",
+  "infectious-person": "A pessoa infectada está usando",
+  "Nothing": "Nada",
+  "Cloth": "PanoPano",
+  "SM": "SM",
+  "SM,fit": "SM,fit",
+  "N95,fit": "N95,fit",
+  "hours": "Horas",
+  "mins": "mins",
+  "seconds": "segundos",
+  "Figures": "Figuras",
+  "Time": "Hora",
+  "Versus Nothing / Nothing": "Contra Nada / Nada"
+}

@@ -169,6 +169,7 @@ export default {
     this.location = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
     if (this.location === 'ar') this.$i18n.locale = 'ar';
     if (this.location === 'es') this.$i18n.locale = 'es';
+    if (this.location === 'pt') this.$i18n.locale = 'pt';
   },
   computed: {
     direction() {
