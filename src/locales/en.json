@@ -4,5 +4,6 @@
   "rows-info": "Rows - masks the infectious person is wearing",
   "column-info": "Columns - masks the person who could be infected is wearing",
   "good-person": "Vulnerable person is wearing",
-  "infectious-person": "Infectious person is wearing"
+  "infectious-person": "Infectious person is wearing",
+  "respirator-standard": "Respirator Standard"
 }

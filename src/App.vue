@@ -6,14 +6,10 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-8">{{ $t('covid-message') }}</div>
         <div class="col-sm-10">{{ $t('table-info') }}</div>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10">{{ $t('rows-info') }}</div>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10">{{ $t('column-info') }}</div>
       </div>
       <br/>
-      <div class="row"  dir="ltr">
-        <div class="col-sm-1"></div>
+      <div class="row" dir="ltr">
+        <div class="col-sm-3"></div>
         <div class="col-sm-2 form-check form-switch">
           <input
             v-model="checkWild"
@@ -56,6 +52,9 @@
             Omicron
           </label>
         </div>
+      </div>
+      <div class="row" dir="ltr">
+        <div class="col-sm-3"></div>
         <div class="col-sm-3 well form-horizontal" :dir="direction">
           <div class="col-sm-2"></div>
           <div class="form-group" style="white-space:nowrap;">
@@ -75,8 +74,29 @@
             </div>
           </div>
         </div>
+        <div class="col-sm-3 well form-horizontal" :dir="direction">
+          <div class="col-sm-2"></div>
+          <div class="form-group" style="white-space:nowrap;">
+            <div>
+              <div class="btn-group" style="display:inline-flex;">
+                <div>{{ $t('respirator-standard') }}:</div>
+                &nbsp;
+                <input type="radio" id="n95" value="N95" v-model="std"
+                    v-on:click="headers = ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit']">
+                &nbsp;
+                <label for="n95">N95</label>
+                &nbsp;
+                <input type="radio" id="ffp2" value="FFP2" v-model="std"
+                    v-on:click="headers = ['Nothing', 'Cloth', 'SM', 'SM,fit', 'FFP2', 'FFP2,fit']">
+                &nbsp;
+                <label for="ffp2">FFP2</label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <br/>
 
     <h1>{{ $t('good-person') }}</h1>
     <div class="wrapper">
@@ -99,7 +119,7 @@
             <th scope="row" rowspan="4">{{ $t(header) }}</th>
             <tr>
               <td
-                v-for="(head, headIndex) in headers"
+                v-for="(head, headIndex) in dataHeaders"
                 :key="headIndex"
                 :style="`background-color: #${jsonData[index].color[head]}`"
               >
@@ -143,22 +163,19 @@
 import data from '../data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
 export default {
   name: 'App',
   data() {
     return {
-      headers: [
-        'Nothing',
-        'Cloth',
-        'SM',
-        'SM,fit',
-        'N95',
-        'N95,fit',
-      ],
+      dataHeaders: ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit'],
+      headers: ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit'],
       checkWild: true,
       checkDelta: true,
       checkOmicron: true,
       xOrTime: 'X',
+      std: 'N95',
       jsonData: [],
       location: '',
       windowWidth: 0,
