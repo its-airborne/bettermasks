@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="row" dir="ltr">
-        <div class="col-sm-3"></div>
+        <div class="col-sm-2"></div>
         <div class="col-sm-3 well form-horizontal" :dir="direction">
           <div class="col-sm-2"></div>
           <div class="form-group" style="white-space:nowrap;">
@@ -74,8 +74,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3 well form-horizontal" :dir="direction">
-          <div class="col-sm-2"></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4 well form-horizontal" :dir="direction">
           <div class="form-group" style="white-space:nowrap;">
             <div>
               <div class="btn-group" style="display:inline-flex;">
@@ -84,12 +84,22 @@
                 <input type="radio" id="n95" value="N95" v-model="std"
                     v-on:click="headers = ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit']">
                 &nbsp;
-                <label for="n95">N95</label>
+                <label for="n95">🇺🇸 N95</label>
                 &nbsp;
                 <input type="radio" id="ffp2" value="FFP2" v-model="std"
                     v-on:click="headers = ['Nothing', 'Cloth', 'SM', 'SM,fit', 'FFP2', 'FFP2,fit']">
                 &nbsp;
-                <label for="ffp2">FFP2</label>
+                <label for="ffp2">🇪🇺 FFP2</label>
+                &nbsp;
+                <input type="radio" id="kn95" value="KN95" v-model="std"
+                    v-on:click="headers = ['Nothing', 'Cloth', 'SM', 'SM,fit', 'KN95', 'KN95,fit']">
+                &nbsp;
+                <label for="kn95">🇨🇳 KN95</label>
+                &nbsp;
+                <input type="radio" id="kf94" value="FK94" v-model="std"
+                    v-on:click="headers = ['Nothing', 'Cloth', 'SM', 'SM,fit', 'KF94', 'KF94,fit']">
+                &nbsp;
+                <label for="kf94">🇰🇷 KF94</label>
               </div>
             </div>
           </div>
@@ -170,7 +180,7 @@ export default {
   data() {
     return {
       dataHeaders: ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit'],
-      headers: ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit'],
+      headers: ['Nothing', 'Cloth', 'SM', 'SM,fit', '🇺🇸 N95', 'N95,fit'],
       checkWild: true,
       checkDelta: true,
       checkOmicron: true,
