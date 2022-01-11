@@ -166,7 +166,7 @@ export default {
   },
   created() {
     this.jsonData = data;
-    this.location = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
+    this.location = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
     if (this.location === 'ar') this.$i18n.locale = 'ar';
   },
   computed: {
