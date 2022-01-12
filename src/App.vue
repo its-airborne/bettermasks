@@ -1,5 +1,18 @@
 <template>
-  <div id="app" :dir="direction">
+
+  <div id="app" :dir="direction" style="margin-top: 2px;">
+
+    <div class="grid">
+      <div class="row" :dir="direction">
+       <span>
+         <span v-on:click="doLocale('en', true)">English</span>&nbsp;
+         <span v-on:click="doLocale('es', true)">Español</span>&nbsp;
+         <span v-on:click="doLocale('pt', true)">Português</span>&nbsp;
+         <span v-on:click="doLocale('ar', true)"> العربية</span>
+        </span>
+      </div>
+    </div>
+    <br/>
 
     <div class="container">
       <div class="row">
@@ -173,8 +186,6 @@
 import data from '../data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
 export default {
   name: 'App',
   data() {
@@ -193,10 +204,11 @@ export default {
   },
   created() {
     this.jsonData = data;
-    this.location = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
-    if (this.location === 'ar') this.$i18n.locale = 'ar';
-    if (this.location === 'es') this.$i18n.locale = 'es';
-    if (this.location === 'pt') this.$i18n.locale = 'pt';
+    this.il8n = this.$i18n;
+    let start = window.location.href.lastIndexOf('#') + 1;
+    console.log(`0. locn=${start}`);
+    if (start === 0) this.doLocale('', false);
+    else this.doLocale(window.location.href.substring(start));
   },
   computed: {
     direction() {
@@ -211,6 +223,28 @@ export default {
       const topValue = (document.querySelector('.wrapper').offsetHeight - document.querySelector('.wrapper h1').offsetHeight) / 2;
       document.querySelector('.wrapper h1').style.top = `${topValue}px`;
     });
+  },
+  methods: {
+    doLocale : function (locn, redoHref) {
+      let l = locn;
+      switch (locn) {
+        case 'ar':
+          this.$i18n.locale = 'ar';
+          break;
+        case 'es':
+          this.$i18n.locale = 'es';
+          break;
+        case 'pt':
+          this.$i18n.locale = 'pt';
+          break;
+        default:
+          this.$i18n.locale = 'en';
+          l = '';
+      }
+      if (redoHref) {
+        window.location.href = `/#${l}`;
+      }
+    },
   },
 };
 </script>
