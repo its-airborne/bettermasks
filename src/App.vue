@@ -9,7 +9,7 @@
          <span v-on:click="doLocale('es', true)">Español</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('pt', true)">Português</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('ar', true)"> العربية</span>&nbsp;&nbsp;
-         <span v-on:click="doLocale('th', true)">ไทยไทย</span>&nbsp;&nbsp;
+         <span v-on:click="doLocale('th', true)">ไทย</span>&nbsp;&nbsp;
         </span>
       </div>
     </div>
