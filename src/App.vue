@@ -5,11 +5,11 @@
     <div class="grid">
       <div class="row" :dir="direction">
        <span>
-         <span v-on:click="doLocale('en', true)">English</span>&nbsp;
-         <span v-on:click="doLocale('es', true)">Español</span>&nbsp;
-         <span v-on:click="doLocale('pt', true)">Português</span>&nbsp;
-         <span v-on:click="doLocale('ar', true)"> العربية</span>
-         <span v-on:click="doLocale('th', true)">ไทยไทย</span>&nbsp;
+         <span v-on:click="doLocale('en', true)">English</span>&nbsp;&nbsp;
+         <span v-on:click="doLocale('es', true)">Español</span>&nbsp;&nbsp;
+         <span v-on:click="doLocale('pt', true)">Português</span>&nbsp;&nbsp;
+         <span v-on:click="doLocale('ar', true)"> العربية</span>&nbsp;&nbsp;
+         <span v-on:click="doLocale('th', true)">ไทยไทย</span>&nbsp;&nbsp;
         </span>
       </div>
     </div>
