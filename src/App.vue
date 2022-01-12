@@ -107,7 +107,7 @@
                     <div class="row">
                       <div style="white-space:nowrap;"><strong>{{
                           $t('respirator-standard')
-                        }}</strong>:
+                        }}</strong>
                       </div>
                     </div>
                     <div class="row">
