@@ -159,12 +159,14 @@
           <tr>
             <th></th>
             <th v-for="header in headers" :key="header">
-              {{ $t(header) }}
+              <img v-if="pics" v-bind:src="'images/' + header + '.jpg'">
+              <span v-if="!pics">{{ $t(header) }}</span>
             </th>
           </tr>
           </thead>
           <tbody v-for="(header, index) in headers" :key="header">
-          <th scope="row" rowspan="4">{{ $t(header) }}</th>
+          <th v-if="!pics" scope="row" rowspan="4">{{ $t(header) }}</th>
+          <th v-if="pics" scope="row" rowspan="4"><img v-bind:src="'images/' + header + '.jpg'"></th>
           <tr>
             <td
               v-for="(head, headIndex) in dataHeaders"
@@ -210,6 +212,19 @@
         </table>
       </div>
     </div>
+    <div class="form-check form-switch">
+      <input
+        v-model="pics"
+        class="form-check-input"
+        type="checkbox"
+        id="pics-button"
+        >
+      <label
+        class="form-check-label wild"
+        for="pics-button">
+        Images
+      </label>
+    </div>
   </div>
 </template>
 
@@ -231,13 +246,13 @@ export default {
       jsonData: [],
       location: '',
       windowWidth: 0,
+      pics: true,
     };
   },
   created() {
     this.jsonData = data;
     this.il8n = this.$i18n;
     let start = window.location.href.lastIndexOf('#') + 1;
-    console.log(`0. locn=${start}`);
     if (start === 0) this.doLocale('', false);
     else this.doLocale(window.location.href.substring(start));
   },
