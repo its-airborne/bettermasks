@@ -130,7 +130,7 @@
                       &#8239;
                       <label for="kn95">🇨🇳 KN95</label>
                       &nbsp;&nbsp;
-                      <input type="radio" id="kf94" value="FK94" v-model="std"
+                      <input type="radio" id="kf94" value="KF94" v-model="std"
                              v-on:click="headers = ['Nothing', 'Cloth', 'SM', 'SM,fit', 'KF94', 'KF94,fit']">
                       &#8239;
                       <label for="kf94">🇰🇷 KF94</label>
