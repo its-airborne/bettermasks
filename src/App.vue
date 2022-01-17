@@ -15,8 +15,6 @@
     </div>
     <br/>
 
-
-
     <div class="container">
       <div class="row">
         <div class="col-sm-2"></div>
@@ -214,6 +212,13 @@
           </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <p class="col-sm-8">{{ $t('n95-footer') }}</p>
+        <div class="col-sm-2"></div>
       </div>
     </div>
     <Modal v-model="showModal" wrapper-class="modal-wrapper">
