@@ -9,6 +9,7 @@
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
   },
   "dependencies": {
+    "@kouts/vue-modal": "^2.1.4",
     "@popperjs/core": "^2.11.2",
     "bootstrap": "^5.1.3",
     "core-js": "^3.6.5",

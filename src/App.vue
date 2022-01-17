@@ -15,6 +15,8 @@
     </div>
     <br/>
 
+
+
     <div class="container">
       <div class="row">
         <div class="col-sm-2"></div>
@@ -160,7 +162,7 @@
             <th></th>
             <th v-for="header in headers" :key="header">
               <img v-if="pics" v-bind:src="'images/' + header + '.jpg'">
-              <span v-if="!pics">{{ $t(header) }}</span>
+              <span @click="doShowModal(header + '_' + location + '.html')" v-if="!pics">{{ $t(header) }}</span>
             </th>
           </tr>
           </thead>
@@ -225,12 +227,26 @@
         Images
       </label>
     </div>
+    <Modal v-model="showModal" wrapper-class="modal-wrapper">
+      <iframe :src="toShow"></iframe>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <button class="btn btn-secondary" type="button" @click="showModal = false">Close</button>
+          </div>
+        </div>
+      </div>
+    </Modal>
   </div>
 </template>
 
 <script>
 import data from '../data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import VueModal from '@kouts/vue-modal';
+import '@kouts/vue-modal/dist/vue-modal.css';
+
 
 export default {
   name: 'App',
@@ -247,6 +263,8 @@ export default {
       location: '',
       windowWidth: 0,
       pics: true,
+      showModal: false,
+      toShow: '',
     };
   },
   created() {
@@ -270,7 +288,15 @@ export default {
       document.querySelector('.wrapper h1').style.top = `${topValue}px`;
     });
   },
+  components: {
+    'Modal': VueModal,
+  },
   methods: {
+    doShowModal: function (doc) {
+      console.log('>> ' + this.location);
+      this.toShow = doc;
+      this.showModal = true;
+    },
     doLocale: function (locn, redoHref) {
       let l = locn;
       switch (locn) {
@@ -290,6 +316,7 @@ export default {
           this.$i18n.locale = 'en';
           l = '';
       }
+      this.location = this.$i18n.locale;
       if (redoHref) {
         window.location.href = `/#${l}`;
       }
@@ -470,4 +497,13 @@ table table {
     padding-left: 40px;
   }
 }
+
+.modal-wrapper {
+  display: flex;
+  align-items: center;
+}
+.modal-wrapper .vm {
+  top: auto;
+}
+
 </style>

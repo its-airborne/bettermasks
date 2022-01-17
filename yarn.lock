@@ -1088,6 +1088,13 @@
     json5 "^2.2.0"
     loader-utils "^2.0.0"
 
+"@kouts/vue-modal@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@kouts/vue-modal/-/vue-modal-2.1.4.tgz#477fd94088722eebc6386c167c373fc3f8ce6d08"
+  integrity sha512-yapxcxRxIBS1F/uiEAmJIvLFXmcr2PbzQzOY9UEmcDDUM+TLfCfIFXtaUTU1peAV0iKL2ZOvuSzshUleLPFKBA==
+  dependencies:
+    vue "^2.6.14"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz"
@@ -8693,7 +8700,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@^2.6.11:
+vue@^2.6.11, vue@^2.6.14:
   version "2.6.14"
   resolved "https://registry.npmmirror.com/vue/download/vue-2.6.14.tgz"
   integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
