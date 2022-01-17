@@ -217,7 +217,7 @@
       </div>
     </div>
     <Modal v-model="showModal" wrapper-class="modal-wrapper">
-      <iframe :src="toShow"></iframe>
+      <iframe style="width: 100%" :src="toShow"></iframe>
       <div class="row">
         <div class="col-sm-12">
           <div class="text-center">
