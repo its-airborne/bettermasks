@@ -155,20 +155,22 @@
           {{ $t('infectious-person') }}
         </h1>
       </div>
-      <div class="table-responsive-sm">
+      <div class="table-responsive-sm" style="padding-left: 7%">
         <table class="table">
           <thead>
           <tr>
             <th></th>
-            <th v-for="header in headers" :key="header">
-              <img v-if="pics" v-bind:src="'images/' + header + '.jpg'">
-              <span @click="doShowModal(header + '_' + location + '.html')" v-if="!pics">{{ $t(header) }}</span>
+            <th v-for="header in headers" :key="header" @click="doShowModal(header + '_' + location + '.html')">
+              <img v-bind:src="'images/' + header + '.jpg'"><br/>
+              <span>{{ $t(header) }}</span>
             </th>
           </tr>
           </thead>
           <tbody v-for="(header, index) in headers" :key="header">
-          <th v-if="!pics" scope="row" rowspan="4">{{ $t(header) }}</th>
-          <th v-if="pics" scope="row" rowspan="4"><img v-bind:src="'images/' + header + '.jpg'"></th>
+          <th scope="row" rowspan="4" style="width:15%">
+            <img v-bind:src="'images/' + header + '.jpg'">
+            <span>{{ $t(header) }}</span>
+          </th>
           <tr>
             <td
               v-for="(head, headIndex) in dataHeaders"
@@ -214,19 +216,6 @@
         </table>
       </div>
     </div>
-    <div class="form-check form-switch">
-      <input
-        v-model="pics"
-        class="form-check-input"
-        type="checkbox"
-        id="pics-button"
-        >
-      <label
-        class="form-check-label wild"
-        for="pics-button">
-        Images
-      </label>
-    </div>
     <Modal v-model="showModal" wrapper-class="modal-wrapper">
       <iframe :src="toShow"></iframe>
       <div class="row">
@@ -262,7 +251,6 @@ export default {
       jsonData: [],
       location: '',
       windowWidth: 0,
-      pics: true,
       showModal: false,
       toShow: '',
     };
