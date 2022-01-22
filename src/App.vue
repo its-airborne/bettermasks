@@ -221,7 +221,7 @@
         <div class="col-sm-2"></div>
       </div>
     </div>
-    <Modal v-model="showModal" wrapper-class="modal-wrapper">
+    <Modal v-model="showModal" bg-class="rounded" v-bind:title="$t('mask-info')" wrapper-class="modal-wrapper">
       <iframe style="width: 100%" :src="toShow"></iframe>
       <div class="row">
         <div class="col-sm-12">
