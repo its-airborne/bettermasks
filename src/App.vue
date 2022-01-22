@@ -22,7 +22,7 @@
         <div class="col-sm-2"></div>
       </div>
     </div>
-    <button v-if="!optionz" v-on:click="optionz = true">Change variant, risk representation or respirator standard</button>
+    <button class="btn btn-outline-secondary" v-if="!optionz" v-on:click="optionz = true">Change variant, risk representation or respirator standard</button>
     <div class="container border" v-if="optionz" style="position: relative">
       <button v-on:click="optionz = false" style="position: absolute; border-radius: 15px; top: -10px; right: -10px;">
             X
