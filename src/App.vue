@@ -159,7 +159,7 @@
           <thead>
           <tr>
             <th></th>
-            <th v-for="header in headers" :key="header" @click="doShowModal(header + '_' + location + '.html')">
+            <th v-for="header in headers" :key="header" @click="doshowMaskModal(header + '_' + location + '.html')">
               <img v-bind:src="'images/' + header + '.jpg'"><br/>
               <span>{{ $t(header) }}</span>
             </th>
@@ -222,12 +222,12 @@
         <div class="col-sm-2"></div>
       </div>
     </div>
-    <Modal v-model="showModal" bg-class="rounded" v-bind:title="$t('mask-info')" wrapper-class="modal-wrapper">
+    <Modal v-model="showMaskModal" bg-class="rounded" v-bind:title="$t('mask-info')" wrapper-class="modal-wrapper">
       <iframe style="width: 100%" :src="toShow"></iframe>
       <div class="row">
         <div class="col-sm-12">
           <div class="text-center">
-            <button class="btn btn-secondary" type="button" @click="showModal = false">Close</button>
+            <button class="btn btn-secondary" type="button" @click="showMaskModal = false">Close</button>
           </div>
         </div>
       </div>
@@ -257,7 +257,7 @@ export default {
       jsonData: [],
       location: '',
       windowWidth: 0,
-      showModal: false,
+      showMaskModal: false,
       optionz: false,
       toShow: '',
     };
@@ -287,10 +287,10 @@ export default {
     'Modal': VueModal,
   },
   methods: {
-    doShowModal: function (doc) {
+    doshowMaskModal: function (doc) {
       console.log('>> ' + this.location);
       this.toShow = doc;
-      this.showModal = true;
+      this.showMaskModal = true;
     },
     doLocale: function (locn, redoHref) {
       let l = locn;
