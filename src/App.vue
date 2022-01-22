@@ -159,7 +159,7 @@
           <thead>
           <tr>
             <th></th>
-            <th v-for="header in headers" :key="header" @click="doshowMaskModal(header + '_' + location + '.html')">
+            <th v-for="header in headers" :key="header" @click="doShowMaskModal(header + '_' + location + '.html')">
               <img v-bind:src="'images/' + header + '.jpg'"><br/>
               <span>{{ $t(header) }}</span>
             </th>
@@ -171,7 +171,7 @@
             <span>{{ $t(header) }}</span>
           </th>
           <tr>
-            <td
+            <td style="border-color: blue" v-on:click="doShowRiskModal(index, head)"
               v-for="(head, headIndex) in dataHeaders"
               :key="headIndex"
               :style="`background-color: #${jsonData[index].color[head]}`"
@@ -223,11 +223,31 @@
       </div>
     </div>
     <Modal v-model="showMaskModal" bg-class="rounded" v-bind:title="$t('mask-info')" wrapper-class="modal-wrapper">
-      <iframe style="width: 100%" :src="toShow"></iframe>
+      <iframe style="width: 100%" :src="toShowInMaskModal"></iframe>
       <div class="row">
         <div class="col-sm-12">
           <div class="text-center">
             <button class="btn btn-secondary" type="button" @click="showMaskModal = false">Close</button>
+          </div>
+        </div>
+      </div>
+    </Modal>
+    <Modal v-model="showRiskModal" bg-class="rounded" title="Risk Info" wrapper-class="modal-wrapper">
+      <p v-if="xOrTime === 'Time'">Average time before transmission occurs:
+        <span v-if="checkWild">Black time (1st) is for the wild/original variant. </span>
+        <span v-if="checkDelta">Red time (2nd) is for the Delta variant. </span>
+        <span v-if="checkOmicron">Blue time (3rd) is for the Omicron variant. </span>
+      </p>
+      <p v-if="xOrTime === 'X'">Relatve risk of transmission versus nobody wearing a mask for
+        the original (wild) variant of the virus
+              <span v-if="checkWild">Black figure (1st) is for the wild/original variant. </span>
+        <span v-if="checkDelta">Red figure (2nd) is for the Delta variant. </span>
+        <span v-if="checkOmicron">Blue figure (3rd) is for the Omicron variant. </span>
+      </p>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <button class="btn btn-secondary" type="button" @click="showRiskModal = false">Close</button>
           </div>
         </div>
       </div>
@@ -258,8 +278,11 @@ export default {
       location: '',
       windowWidth: 0,
       showMaskModal: false,
+      showRiskModal: false,
       optionz: false,
-      toShow: '',
+      toShowInMaskModal: '',
+      showRiskModalIndex: -1,
+      showRiskModalHead: '',
     };
   },
   created() {
@@ -287,10 +310,16 @@ export default {
     'Modal': VueModal,
   },
   methods: {
-    doshowMaskModal: function (doc) {
+    doShowMaskModal: function (doc) {
       console.log('>> ' + this.location);
-      this.toShow = doc;
+      this.toShowInMaskModal = doc;
       this.showMaskModal = true;
+    },
+    doShowRiskModal: function (ix, head) {
+      console.log('>> ' + this.location);
+      this.showRiskModalIndex = ix;
+      this.showRiskModalHead = head;
+      this.showRiskModal = true;
     },
     doLocale: function (locn, redoHref) {
       let l = locn;
