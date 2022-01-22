@@ -233,17 +233,16 @@
         </div>
       </div>
     </Modal>
-    <Modal v-model="showRiskModal" bg-class="rounded" title="Risk Info" wrapper-class="modal-wrapper">
-      <p v-if="xOrTime === 'Time'">Average time before transmission occurs:
-        <span v-if="checkWild">Black time (1st) is for the wild/original variant. </span>
-        <span v-if="checkDelta">Red time (2nd) is for the Delta variant. </span>
-        <span v-if="checkOmicron">Blue time (3rd) is for the Omicron variant. </span>
+    <Modal v-model="showRiskModal" bg-class="rounded" title="Risk Information" wrapper-class="modal-wrapper">
+      <p v-if="showRiskModal && xOrTime === 'Time'">Average time before virus transmission from an infected (but possibly asymptomatic) person to a vulnerable/uninfected person occurs:<br/>
+        <span v-if="checkWild">Wild/original variant: {{ $t(jsonData[showRiskModalIndex].wild.time[showRiskModalHead]) }}. </span>
+        <span v-if="checkDelta">Delta variant: {{ $t(jsonData[showRiskModalIndex].delta.time[showRiskModalHead]) }}. </span>
+        <span v-if="checkOmicron">Omicron variant: {{ $t(jsonData[showRiskModalIndex].omicron.time[showRiskModalHead]) }}. </span>
       </p>
-      <p v-if="xOrTime === 'X'">Relatve risk of transmission versus nobody wearing a mask for
-        the original (wild) variant of the virus
-              <span v-if="checkWild">Black figure (1st) is for the wild/original variant. </span>
-        <span v-if="checkDelta">Red figure (2nd) is for the Delta variant. </span>
-        <span v-if="checkOmicron">Blue figure (3rd) is for the Omicron variant. </span>
+      <p v-if="showRiskModal && xOrTime === 'X'">Relative 'better' factor of transmission from an infected (but possibly asymptomatic) person to a vulnerable/uninfected person. Neither wearing a mask for the original (wild) variant is a 'better' factor of 1 X:<br/>
+        <span v-if="checkWild">Wild/original variant: {{ $t(jsonData[showRiskModalIndex].wild.x[showRiskModalHead]) }} X. </span>
+        <span v-if="checkDelta">Delta variant: {{ $t(jsonData[showRiskModalIndex].delta.x[showRiskModalHead]) }} X. </span>
+        <span v-if="checkOmicron">Omicron variant: {{ $t(jsonData[showRiskModalIndex].omicron.x[showRiskModalHead]) }} X. </span>
       </p>
       <div class="row">
         <div class="col-sm-12">
@@ -317,7 +316,6 @@ export default {
       this.showMaskModal = true;
     },
     doShowRiskModal: function (ix, head) {
-      console.log('>> ' + this.location);
       this.showRiskModalIndex = ix;
       this.showRiskModalHead = head;
       this.showRiskModal = true;
