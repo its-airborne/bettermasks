@@ -2,12 +2,12 @@
   {
     "wild": {
       "x" : {
-        "Nothing": "1.0X",
-        "Cloth": "1.4X",
-        "SM": "2X",
-        "SM,fit": "5X",
-        "N95": "10X",
-        "N95,fit": "100X"
+        "Nothing": "1.0",
+        "Cloth": "1.4",
+        "SM": "2",
+        "SM,fit": "5",
+        "N95": "10",
+        "N95,fit": "100"
       },
       "time": {
         "Nothing": "10 mins",
@@ -20,12 +20,12 @@
     },
     "delta": {
       "x" : {
-        "Nothing": "0.4X",
-        "Cloth": "0.6X",
-        "SM": "0.8X",
-        "SM,fit": "2X",
-        "N95": "4X",
-        "N95,fit": "40X"
+        "Nothing": "0.4",
+        "Cloth": "0.6",
+        "SM": "0.8",
+        "SM,fit": "2",
+        "N95": "4",
+        "N95,fit": "40"
       },
       "time": {
         "Nothing": "4 mins",
@@ -38,12 +38,12 @@
     },
     "omicron": {
       "x" : {
-        "Nothing": "0.16X",
-        "Cloth": "0.24X",
-        "SM": "0.32X",
-        "SM,fit": "0.8X",
-        "N95": "1.6X",
-        "N95,fit": "16X"
+        "Nothing": "0.16",
+        "Cloth": "0.24",
+        "SM": "0.32",
+        "SM,fit": "0.8",
+        "N95": "1.6",
+        "N95,fit": "16"
       },
       "time": {
         "Nothing": "100 seconds",
@@ -66,12 +66,12 @@
   {
     "wild": {
       "x" : {
-        "Nothing": "1.7X",
-        "Cloth": "2.4X",
-        "SM": "3.3X",
-        "SM,fit": "8X",
-        "N95": "17X",
-        "N95,fit": "168X"
+        "Nothing": "1.7",
+        "Cloth": "2.4",
+        "SM": "3.3",
+        "SM,fit": "8",
+        "N95": "17",
+        "N95,fit": "168"
       },
       "time": {
         "Nothing": "17 mins",
@@ -84,12 +84,12 @@
     },
     "delta": {
       "x" : {
-        "Nothing": "0.7X",
-        "Cloth": "X",
-        "SM": "1.3X",
-        "SM,fit": "3.4X",
-        "N95": "7X",
-        "N95,fit": "66X"
+        "Nothing": "0.7",
+        "Cloth": "",
+        "SM": "1.3",
+        "SM,fit": "3.4",
+        "N95": "7",
+        "N95,fit": "66"
       },
       "time": {
         "Nothing": "7 mins",
@@ -102,12 +102,12 @@
     },
     "omicron": {
       "x" : {
-        "Nothing": "0.28X",
-        "Cloth": "0.4X",
-        "SM": "0.52X",
-        "SM,fit": "1.36X",
-        "N95": "2.8X",
-        "N95,fit": "26.4X"
+        "Nothing": "0.28",
+        "Cloth": "0.4",
+        "SM": "0.52",
+        "SM,fit": "1.36",
+        "N95": "2.8",
+        "N95,fit": "26.4"
       },
       "time": {
         "Nothing": "2.8 mins",
@@ -130,12 +130,12 @@
   {
     "wild": {
       "x" : {
-        "Nothing": "2X",
-        "Cloth": "3X",
-        "SM": "4X",
-        "SM,fit": "10X",
-        "N95": "20X",
-        "N95,fit": "198X"
+        "Nothing": "2",
+        "Cloth": "3",
+        "SM": "4",
+        "SM,fit": "10",
+        "N95": "20",
+        "N95,fit": "198"
       },
       "time": {
         "Nothing": "20 mins",
@@ -148,12 +148,12 @@
     },
     "delta": {
       "x" : {
-        "Nothing": "0.8X",
-        "Cloth": "1.2X",
-        "SM": "1.6X",
-        "SM,fit": "4X",
-        "N95": "8X",
-        "N95,fit": "84X"
+        "Nothing": "0.8",
+        "Cloth": "1.2",
+        "SM": "1.6",
+        "SM,fit": "4",
+        "N95": "8",
+        "N95,fit": "84"
       },
       "time": {
         "Nothing": "8 mins",
@@ -166,12 +166,12 @@
     },
     "omicron": {
       "x" : {
-        "Nothing": "0.32X",
-        "Cloth": "0.48X",
-        "SM": "0.64X",
-        "SM,fit": "1.6X",
-        "N95": "3.2X",
-        "N95,fit": "33.6X"
+        "Nothing": "0.32",
+        "Cloth": "0.48",
+        "SM": "0.64",
+        "SM,fit": "1.6",
+        "N95": "3.2",
+        "N95,fit": "33.6"
       },
       "time": {
         "Nothing": "3.2 mins",
@@ -194,12 +194,12 @@
   {
     "wild": {
       "x" : {
-        "Nothing": "5X",
-        "Cloth": "7X",
-        "SM": "12X",
-        "SM,fit": "25X",
-        "N95": "50X",
-        "N95,fit": "498X"
+        "Nothing": "5",
+        "Cloth": "7",
+        "SM": "12",
+        "SM,fit": "25",
+        "N95": "50",
+        "N95,fit": "498"
       },
       "time": {
         "Nothing": "50 mins",
@@ -212,12 +212,12 @@
     },
     "delta": {
       "x" : {
-        "Nothing": "2X",
-        "Cloth": "3X",
-        "SM": "4.1X",
-        "SM,fit": "10X",
-        "N95": "20X",
-        "N95,fit": "204X"
+        "Nothing": "2",
+        "Cloth": "3",
+        "SM": "4.1",
+        "SM,fit": "10",
+        "N95": "20",
+        "N95,fit": "204"
       },
       "time": {
         "Nothing": "20 mins",
@@ -230,12 +230,12 @@
     },
     "omicron": {
       "x" : {
-        "Nothing": "0.8X",
-        "Cloth": "1.2X",
-        "SM": "1.64X",
-        "SM,fit": "4X",
-        "N95": "8X",
-        "N95,fit": "81.6X"
+        "Nothing": "0.8",
+        "Cloth": "1.2",
+        "SM": "1.64",
+        "SM,fit": "4",
+        "N95": "8",
+        "N95,fit": "81.6"
       },
       "time": {
         "Nothing": "8 mins",
@@ -258,12 +258,12 @@
   {
     "wild": {
       "x" : {
-        "Nothing": "10X",
-        "Cloth": "14.4X",
-        "SM": "18X",
-        "SM,fit": "50X",
-        "N95": "102X",
-        "N95,fit": "1,002X"
+        "Nothing": "10",
+        "Cloth": "14.4",
+        "SM": "18",
+        "SM,fit": "50",
+        "N95": "102",
+        "N95,fit": "1,002"
       },
       "time": {
         "Nothing": "1.7 hours",
@@ -276,12 +276,12 @@
     },
     "delta": {
       "x" : {
-        "Nothing": "4X",
-        "Cloth": "5.8X",
-        "SM": "8X",
-        "SM,fit": "20X",
-        "N95": "41X",
-        "N95,fit": "408X"
+        "Nothing": "4",
+        "Cloth": "5.8",
+        "SM": "8",
+        "SM,fit": "20",
+        "N95": "41",
+        "N95,fit": "408"
       },
       "time": {
         "Nothing": "40 mins",
@@ -294,12 +294,12 @@
     },
     "omicron": {
       "x" : {
-        "Nothing": "1.6X",
-        "Cloth": "2.3X",
-        "SM": "3.2X",
-        "SM,fit": "8X",
-        "N95": "16.4X",
-        "N95,fit": "163.2X"
+        "Nothing": "1.6",
+        "Cloth": "2.3",
+        "SM": "3.2",
+        "SM,fit": "8",
+        "N95": "16.4",
+        "N95,fit": "163.2"
       },
       "time": {
         "Nothing": "16 mins",
@@ -322,12 +322,12 @@
   {
     "wild": {
       "x" : {
-        "Nothing": "100X",
-        "Cloth": "144X",
-        "SM": "198X",
-        "SM,fit": "498X",
-        "N95": "1,002X",
-        "N95,fit": "10,002X"
+        "Nothing": "100",
+        "Cloth": "144",
+        "SM": "198",
+        "SM,fit": "498",
+        "N95": "1,002",
+        "N95,fit": "10,002"
       },
       "time": {
         "Nothing": "16.7 hours",
@@ -340,12 +340,12 @@
     },
     "delta": {
       "x" : {
-        "Nothing": "40X",
-        "Cloth": "58X",
-        "SM": "84X",
-        "SM,fit": "204X",
-        "N95": "408X",
-        "N95,fit": "4,062X"
+        "Nothing": "40",
+        "Cloth": "58",
+        "SM": "84",
+        "SM,fit": "204",
+        "N95": "408",
+        "N95,fit": "4,062"
       },
       "time": {
         "Nothing": "6.8 hours",
@@ -358,12 +358,12 @@
     },
     "omicron": {
       "x" : {
-        "Nothing": "16X",
-        "Cloth": "23X",
-        "SM": "33.6X",
-        "SM,fit": "81.6X",
-        "N95": "163.2X",
-        "N95,fit": "1,625X"
+        "Nothing": "16",
+        "Cloth": "23",
+        "SM": "33.6",
+        "SM,fit": "81.6",
+        "N95": "163.2",
+        "N95,fit": "1,625"
       },
       "time": {
         "Nothing": "2.2 hours",

@@ -22,7 +22,8 @@
         <div class="col-sm-2"></div>
       </div>
     </div>
-    <button class="btn btn-outline-secondary" v-if="!optionz" v-on:click="optionz = true">Change variants, risk representation or respirator standard</button>
+    <button class="btn btn-outline-secondary" v-if="!optionz" v-on:click="optionz = true">
+      Change variants, risk representation or respirator standard</button>
     <div class="container border" v-if="optionz" style="position: relative">
       <button v-on:click="optionz = false" style="position: absolute; border-radius: 15px; top: -10px; right: -10px;">
             X
@@ -181,13 +182,13 @@
                   v-if="xOrTime === 'X' && (checkWild || jsonData[index].wild.x[head] === '1.0X')"
                   class="wild"
                 >
-                  {{ $t(jsonData[index].wild.x[head]) }}
+                  {{ $t(jsonData[index].wild.x[head]) }} X
                 </tr>
                 <tr v-if="xOrTime === 'X' && checkDelta" class="delta">
-                  {{ $t(jsonData[index].delta.x[head]) }}
+                  {{ $t(jsonData[index].delta.x[head]) }} X
                 </tr>
                 <tr v-if="xOrTime === 'X' && checkOmicron" class="omicron">
-                  {{ $t(jsonData[index].omicron.x[head]) }}
+                  {{ $t(jsonData[index].omicron.x[head]) }} X
                 </tr>
                 <tr v-if="xOrTime === 'Time' && checkWild"
                     class="wild">
