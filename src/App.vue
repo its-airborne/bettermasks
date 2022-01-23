@@ -233,13 +233,22 @@
         </div>
       </div>
     </Modal>
-    <Modal v-model="showRiskModal" bg-class="rounded" title="Risk Information" wrapper-class="modal-wrapper">
-      <p v-if="showRiskModal && xOrTime === 'Time'">Average time before virus transmission from an infected (but possibly asymptomatic) person to a vulnerable/uninfected person occurs:<br/>
+    <Modal v-model="showTimeToInfectionModal" bg-class="rounded" title="Average time to Infection Explanation" wrapper-class="modal-wrapper">
+      <p v-if="showTimeToInfectionModal">Average time before virus transmission from an infected (but possibly asymptomatic) person to a vulnerable/uninfected person occurs:<br/>
         <span v-if="checkWild">Wild/original variant: {{ $t(jsonData[showRiskModalIndex].wild.time[showRiskModalHead]) }}. </span>
         <span v-if="checkDelta">Delta variant: {{ $t(jsonData[showRiskModalIndex].delta.time[showRiskModalHead]) }}. </span>
         <span v-if="checkOmicron">Omicron variant: {{ $t(jsonData[showRiskModalIndex].omicron.time[showRiskModalHead]) }}. </span>
       </p>
-      <p v-if="showRiskModal && xOrTime === 'X'">Relative 'better' factor of transmission from an infected (but possibly asymptomatic) person to a vulnerable/uninfected person. Neither wearing a mask for the original (wild) variant is a 'better' factor of 1 X:<br/>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <button class="btn btn-secondary" type="button" @click="showTimeToInfectionModal = false">Close</button>
+          </div>
+        </div>
+      </div>
+    </Modal>
+    <Modal v-model="showRiskModal" bg-class="rounded" title="Risk Information" wrapper-class="modal-wrapper">
+      <p v-if="showRiskModal">Relative 'better' factor of transmission from an infected (but possibly asymptomatic) person to a vulnerable/uninfected person. Neither wearing a mask for the original (wild) variant is a 'better' factor of 1 X:<br/>
         <span v-if="checkWild">Wild/original variant: {{ $t(jsonData[showRiskModalIndex].wild.x[showRiskModalHead]) }} X. </span>
         <span v-if="checkDelta">Delta variant: {{ $t(jsonData[showRiskModalIndex].delta.x[showRiskModalHead]) }} X. </span>
         <span v-if="checkOmicron">Omicron variant: {{ $t(jsonData[showRiskModalIndex].omicron.x[showRiskModalHead]) }} X. </span>
@@ -252,7 +261,7 @@
         </div>
       </div>
     </Modal>
-    <p>Interafctive version of <a href="https://twitter.com/akm5376/status/1479042619418177536">this Asit K Mishra Tweet</a></p>
+    <p>This app os an interactive version of <a href="https://twitter.com/akm5376/status/1479042619418177536">this Asit K Mishra Tweet</a></p>
   </div>
 </template>
 
@@ -280,6 +289,7 @@ export default {
       windowWidth: 0,
       showMaskModal: false,
       showRiskModal: false,
+      showTimeToInfectionModal: false,
       optionz: false,
       toShowInMaskModal: '',
       showRiskModalIndex: -1,
@@ -312,14 +322,17 @@ export default {
   },
   methods: {
     doShowMaskModal: function (doc) {
-      console.log('>> ' + this.location);
       this.toShowInMaskModal = doc;
       this.showMaskModal = true;
     },
     doShowRiskModal: function (ix, head) {
       this.showRiskModalIndex = ix;
       this.showRiskModalHead = head;
-      this.showRiskModal = true;
+      if (this.xOrTime === 'X') {
+        this.showRiskModal = true;
+      } else {
+        this.showTimeToInfectionModal = true;
+      }
     },
     doLocale: function (locn, redoHref) {
       let l = locn;
