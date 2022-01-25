@@ -219,7 +219,17 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-2"></div>
-        <p class="col-sm-8">{{ $t('n95-footer') }}</p>
+        <p class="col-sm-8">
+          {{ $t('n95-footer') }}
+        <ol class="list-group">
+          <li class="list-group-item"><a href="https://www.acgih.org/covid-19-fact-sheet-worker-resp/">
+            www.acgih.org/covid-19-fact-sheet-worker-resp</a></li>
+          <li class="list-group-item"><a
+            href="https://www.cidrap.umn.edu/news-perspective/2021/10/commentary-what-can-masks-do-part-1-science-behind-covid-19-protection">
+            www.cidrap.umn.edu/news-perspective/2021/10/commentary-what-can-masks-do-part-1-science-behind-covid-19-protection</a>
+          </li>
+        </ol>
+        </p>
         <div class="col-sm-2"></div>
       </div>
     </div>
@@ -270,7 +280,7 @@
         </div>
       </div>
     </Modal>
-    <p>This app is an interactive version of <a href="https://twitter.com/akm5376/status/1479042619418177536">this Asit K Mishra Tweet</a></p>
+    <p>{{ $t('tweet-link')}} <a href="https://twitter.com/akm5376/status/1479042619418177536">this Asit K Mishra Tweet</a></p>
   </div>
 </template>
 
