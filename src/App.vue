@@ -270,7 +270,7 @@
         </div>
       </div>
     </Modal>
-    <p>This app os an interactive version of <a href="https://twitter.com/akm5376/status/1479042619418177536">this Asit K Mishra Tweet</a></p>
+    <p>This app is an interactive version of <a href="https://twitter.com/akm5376/status/1479042619418177536">this Asit K Mishra Tweet</a></p>
   </div>
 </template>
 
