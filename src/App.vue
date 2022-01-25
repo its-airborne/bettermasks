@@ -8,6 +8,7 @@
          <span v-on:click="doLocale('en', true)">English</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('es', true)">Español</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('pt', true)">Português</span>&nbsp;&nbsp;
+         <span v-on:click="doLocale('fr', true)">Français</span> &nbsp;
          <span v-on:click="doLocale('ar', true)"> العربية</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('th', true)">ไทย</span>&nbsp;&nbsp;
         </span>
@@ -245,15 +246,15 @@
     </Modal>
     <Modal v-model="showTimeToInfectionModal" bg-class="rounded" v-bind:title="$t('average-time-to-infection-explanation')" wrapper-class="modal-wrapper">
       <p v-if="showTimeToInfectionModal">{{ $t('timeToInfectionModal') }}<br/>
-        <span v-if="checkWild">{{ $t('wild-original') }} {{ $t('varient') }}: {{
+        <span v-if="checkWild">{{ $t('wild-original') }} {{ $t('variant') }}: {{
             jsonData[showRiskModalIndex].wild.time[showRiskModalHead].substring(0, jsonData[showRiskModalIndex].wild.time[showRiskModalHead].indexOf(' ') + 1) +
             $t(jsonData[showRiskModalIndex].wild.time[showRiskModalHead].substring(jsonData[showRiskModalIndex].wild.time[showRiskModalHead].indexOf(' ') + 1))
           }}. </span>
-        <span v-if="checkDelta">Delta {{ $t('varient') }}: {{
+        <span v-if="checkDelta">Delta {{ $t('variant') }}: {{
             jsonData[showRiskModalIndex].delta.time[showRiskModalHead].substring(0, jsonData[showRiskModalIndex].delta.time[showRiskModalHead].indexOf(' ') + 1) +
             $t(jsonData[showRiskModalIndex].delta.time[showRiskModalHead].substring(jsonData[showRiskModalIndex].delta.time[showRiskModalHead].indexOf(' ') + 1))
           }}. </span>
-        <span v-if="checkOmicron">Omicron {{ $t('varient') }}: {{
+        <span v-if="checkOmicron">Omicron {{ $t('variant') }}: {{
             jsonData[showRiskModalIndex].omicron.time[showRiskModalHead].substring(0, jsonData[showRiskModalIndex].omicron.time[showRiskModalHead].indexOf(' ') + 1) +
             $t(jsonData[showRiskModalIndex].omicron.time[showRiskModalHead].substring(jsonData[showRiskModalIndex].omicron.time[showRiskModalHead].indexOf(' ') + 1))
           }}. </span>
@@ -268,9 +269,9 @@
     </Modal>
     <Modal v-model="showRiskModal" bg-class="rounded" v-bind:title="$t('risk-information')" wrapper-class="modal-wrapper">
       <p v-if="showRiskModal">{{ $t('riskModal')}}<br/>
-        <span v-if="checkWild">{{ $t('wild-original') }} {{ $t('varient') }}: {{ $t(jsonData[showRiskModalIndex].wild.x[showRiskModalHead]) }} X. </span>
-        <span v-if="checkDelta">Delta {{ $t('varient') }}: {{ $t(jsonData[showRiskModalIndex].delta.x[showRiskModalHead]) }} X. </span>
-        <span v-if="checkOmicron">Omicron {{ $t('varient') }}: {{ $t(jsonData[showRiskModalIndex].omicron.x[showRiskModalHead]) }} X. </span>
+        <span v-if="checkWild">{{ $t('wild-original') }} {{ $t('variant') }}: {{ $t(jsonData[showRiskModalIndex].wild.x[showRiskModalHead]) }} X. </span>
+        <span v-if="checkDelta">Delta {{ $t('variant') }}: {{ $t(jsonData[showRiskModalIndex].delta.x[showRiskModalHead]) }} X. </span>
+        <span v-if="checkOmicron">Omicron {{ $t('variant') }}: {{ $t(jsonData[showRiskModalIndex].omicron.x[showRiskModalHead]) }} X. </span>
       </p>
       <div class="row">
         <div class="col-sm-12">
@@ -367,6 +368,9 @@ export default {
           break;
         case 'pt':
           this.$i18n.locale = 'pt';
+          break;
+        case 'fr':
+          this.$i18n.locale = 'fr';
           break;
         default:
           this.$i18n.locale = 'en';
