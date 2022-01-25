@@ -23,7 +23,7 @@
       </div>
     </div>
     <button class="btn btn-outline-secondary" v-if="!optionz" v-on:click="optionz = true">
-      Change variants, risk representation or respirator standard</button>
+      {{ $t('change-things-button')}}</button>
     <div class="container border" v-if="optionz" style="position: relative">
       <button v-on:click="optionz = false" style="position: absolute; border-radius: 15px; top: -10px; right: -10px;">
             X
@@ -233,11 +233,20 @@
         </div>
       </div>
     </Modal>
-    <Modal v-model="showTimeToInfectionModal" bg-class="rounded" title="Average time to Infection Explanation" wrapper-class="modal-wrapper">
-      <p v-if="showTimeToInfectionModal">Average time before virus transmission from an infected (but possibly asymptomatic) person to a vulnerable/uninfected person occurs:<br/>
-        <span v-if="checkWild">Wild/original variant: {{ $t(jsonData[showRiskModalIndex].wild.time[showRiskModalHead]) }}. </span>
-        <span v-if="checkDelta">Delta variant: {{ $t(jsonData[showRiskModalIndex].delta.time[showRiskModalHead]) }}. </span>
-        <span v-if="checkOmicron">Omicron variant: {{ $t(jsonData[showRiskModalIndex].omicron.time[showRiskModalHead]) }}. </span>
+    <Modal v-model="showTimeToInfectionModal" bg-class="rounded" v-bind:title="$t('average-time-to-infection-explanation')" wrapper-class="modal-wrapper">
+      <p v-if="showTimeToInfectionModal">{{ $t('timeToInfectionModal') }}<br/>
+        <span v-if="checkWild">{{ $t('wild-original') }} {{ $t('varient') }}: {{
+            jsonData[showRiskModalIndex].wild.time[showRiskModalHead].substring(0, jsonData[showRiskModalIndex].wild.time[showRiskModalHead].indexOf(' ') + 1) +
+            $t(jsonData[showRiskModalIndex].wild.time[showRiskModalHead].substring(jsonData[showRiskModalIndex].wild.time[showRiskModalHead].indexOf(' ') + 1))
+          }}. </span>
+        <span v-if="checkDelta">Delta {{ $t('varient') }}: {{
+            jsonData[showRiskModalIndex].delta.time[showRiskModalHead].substring(0, jsonData[showRiskModalIndex].delta.time[showRiskModalHead].indexOf(' ') + 1) +
+            $t(jsonData[showRiskModalIndex].delta.time[showRiskModalHead].substring(jsonData[showRiskModalIndex].delta.time[showRiskModalHead].indexOf(' ') + 1))
+          }}. </span>
+        <span v-if="checkOmicron">Omicron {{ $t('varient') }}: {{
+            jsonData[showRiskModalIndex].omicron.time[showRiskModalHead].substring(0, jsonData[showRiskModalIndex].omicron.time[showRiskModalHead].indexOf(' ') + 1) +
+            $t(jsonData[showRiskModalIndex].omicron.time[showRiskModalHead].substring(jsonData[showRiskModalIndex].omicron.time[showRiskModalHead].indexOf(' ') + 1))
+          }}. </span>
       </p>
       <div class="row">
         <div class="col-sm-12">
@@ -247,11 +256,11 @@
         </div>
       </div>
     </Modal>
-    <Modal v-model="showRiskModal" bg-class="rounded" title="Risk Information" wrapper-class="modal-wrapper">
-      <p v-if="showRiskModal">Relative 'better' factor of transmission from an infected (but possibly asymptomatic) person to a vulnerable/uninfected person. Neither wearing a mask for the original (wild) variant is a 'better' factor of 1 X:<br/>
-        <span v-if="checkWild">Wild/original variant: {{ $t(jsonData[showRiskModalIndex].wild.x[showRiskModalHead]) }} X. </span>
-        <span v-if="checkDelta">Delta variant: {{ $t(jsonData[showRiskModalIndex].delta.x[showRiskModalHead]) }} X. </span>
-        <span v-if="checkOmicron">Omicron variant: {{ $t(jsonData[showRiskModalIndex].omicron.x[showRiskModalHead]) }} X. </span>
+    <Modal v-model="showRiskModal" bg-class="rounded" v-bind:title="$t('risk-information')" wrapper-class="modal-wrapper">
+      <p v-if="showRiskModal">{{ $t('riskModal')}}<br/>
+        <span v-if="checkWild">{{ $t('wild-original') }} {{ $t('varient') }}: {{ $t(jsonData[showRiskModalIndex].wild.x[showRiskModalHead]) }} X. </span>
+        <span v-if="checkDelta">Delta {{ $t('varient') }}: {{ $t(jsonData[showRiskModalIndex].delta.x[showRiskModalHead]) }} X. </span>
+        <span v-if="checkOmicron">Omicron {{ $t('varient') }}: {{ $t(jsonData[showRiskModalIndex].omicron.x[showRiskModalHead]) }} X. </span>
       </p>
       <div class="row">
         <div class="col-sm-12">
