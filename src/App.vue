@@ -9,6 +9,7 @@
          <span v-on:click="doLocale('es', true)">Español</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('pt', true)">Português</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('fr', true)">Français</span> &nbsp;
+         <span v-on:click="doLocale('ru', true)">Pусский</span> &nbsp;
          <span v-on:click="doLocale('ar', true)"> العربية</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('th', true)">ไทย</span>&nbsp;&nbsp;
         </span>
@@ -368,6 +369,9 @@ export default {
           break;
         case 'pt':
           this.$i18n.locale = 'pt';
+          break;
+        case 'ru':
+          this.$i18n.locale = 'ru';
           break;
         case 'fr':
           this.$i18n.locale = 'fr';
