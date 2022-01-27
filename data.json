@@ -13,7 +13,7 @@
         "Nothing": "10 mins",
         "Cloth": "14 mins",
         "SM": "20 mins",
-        "SM,fit": "50 hours",
+        "SM,fit": "50 mins",
         "N95": "1.7 hours",
         "N95,fit": "16.7 hours"
       }
@@ -177,8 +177,8 @@
         "Nothing": "3.2 mins",
         "Cloth": "4.8 mins",
         "SM": "6.4 mins",
-        "SM,fit": "16.4 hours",
-        "N95": "32.4 hours",
+        "SM,fit": "16.4 mins",
+        "N95": "32.4 mins",
         "N95,fit": "5.6 hours"
       }
     },
@@ -305,7 +305,7 @@
         "Nothing": "16 mins",
         "Cloth": "23.2 mins",
         "SM": "32.4 mins",
-        "SM,fit": "81.6 hours",
+        "SM,fit": "81.6 mins",
         "N95": "2.7 hours",
         "N95,fit": "27.2 hours"
       }
