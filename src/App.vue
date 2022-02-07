@@ -287,15 +287,18 @@
 </template>
 
 <script>
+import Vue from 'vue';
 import data from '../data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import VueModal from '@kouts/vue-modal';
 import '@kouts/vue-modal/dist/vue-modal.css';
-
+import VueMeta from 'vue-meta';
 
 export default {
   name: 'App',
+  metaInfo: {
+    title: 'Better Masks',
+  },
   data() {
     return {
       dataHeaders: ['Nothing', 'Cloth', 'SM', 'SM,fit', 'N95', 'N95,fit'],
@@ -387,6 +390,8 @@ export default {
     },
   },
 };
+Vue.use(VueMeta);
+
 </script>
 
 <style>
