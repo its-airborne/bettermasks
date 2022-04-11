@@ -283,7 +283,19 @@
         </div>
       </div>
     </Modal>
-    <p>{{ $t('tweet-link')}} <a href="https://twitter.com/akm5376/status/1479042619418177536">this Asit K Mishra Tweet</a></p>
+    <p>{{ $t('tweet-link') }}
+      <a
+        href="https://twitter.com/akm5376/status/1479042619418177536" target="_blank"
+        rel="noopener">
+        <span>
+          <svg width="16.64px" height="16.64px" viewBox="328 355 335 276"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M 630, 425 A 195, 195 0 0 1 331, 600A 142, 142 0 0 0 428, 570A  70,  70 0 0 1 370, 523A  70,  70 0 0 0 401, 521A  70,  70 0 0 1 344, 455A  70,  70 0 0 0 372, 460A  70,  70 0 0 1 354, 370A 195, 195 0 0 0 495, 442A  67,  67 0 0 1 611, 380A 117, 117 0 0 0 654, 363A  65,  65 0 0 1 623, 401A 117, 117 0 0 0 662, 390A  65,  65 0 0 1 630, 425 Z"
+              style="fill:#3BA9EE;"></path>
+          </svg>
+        </span>Asit K. Mishra</a>.
+    </p>
   </div>
 </template>
 
