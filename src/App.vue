@@ -377,8 +377,7 @@ export default {
         case 'cn':
           this.$i18n.locale = 'cn';
           this.std = 'KN95';
-          this.headers[5] = 'KN95';
-          this.headers[6] = 'KN95,fit';
+          this.headers = ['Nothing', 'Cloth', 'SM', 'SM,fit', 'KN95', 'KN95,fit'];
           break;
         case 'ru':
           this.$i18n.locale = 'ru';
