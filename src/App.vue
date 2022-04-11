@@ -5,6 +5,7 @@
     <div class="grid">
       <div class="row" :dir="direction">
        <span>
+         <span v-on:click="doLocale('cn', true)">中国人</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('en', true)">English</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('es', true)">Español</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('pt', true)">Português</span>&nbsp;&nbsp;
@@ -372,6 +373,9 @@ export default {
           break;
         case 'pt':
           this.$i18n.locale = 'pt';
+          break;
+        case 'cn':
+          this.$i18n.locale = 'cn';
           break;
         case 'ru':
           this.$i18n.locale = 'ru';
