@@ -5,7 +5,7 @@
     <div class="grid">
       <div class="row" :dir="direction">
        <span>
-         <span v-on:click="doLocale('cn', true); doStandard('KN95')">中国人</span>&nbsp;&nbsp;
+         <span v-on:click="doLocale('cn', true)">中国人</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('en', true)">English</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('es', true)">Español</span>&nbsp;&nbsp;
          <span v-on:click="doLocale('pt', true)">Português</span>&nbsp;&nbsp;
@@ -359,9 +359,6 @@ export default {
         this.showTimeToInfectionModal = true;
       }
     },
-    doStandard: function (std) {
-      this.std = std;
-    },
     doLocale: function (locn, redoHref) {
       let l = locn;
       switch (locn) {
@@ -379,6 +376,9 @@ export default {
           break;
         case 'cn':
           this.$i18n.locale = 'cn';
+          this.std = 'KN95';
+          this.headers[5] = 'KN95';
+          this.headers[6] = 'KN95,fit';
           break;
         case 'ru':
           this.$i18n.locale = 'ru';
